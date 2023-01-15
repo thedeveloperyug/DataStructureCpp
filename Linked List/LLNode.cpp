@@ -7,5 +7,4 @@ class LLNode
         this -> data = data;
         next = NULL;
     }
-    
 };
