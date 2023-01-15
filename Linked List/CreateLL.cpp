@@ -8,7 +8,7 @@ void print(LLNode *head)
 {
     while (head != NULL)
     {
-        cout << head->data << " " << endl;
+        cout << head->data << endl;
         head = head->next;
     }
 }
