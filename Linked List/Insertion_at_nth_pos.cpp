@@ -25,7 +25,7 @@ return head;
 LLNode* insertNode(LLNode *head, int i, int data){
     LLNode *newNode = new LLNode(data);
     LLNode *temp = head;
-    int count = 0;
+    int count = 1;
     if(i==0){
        newNode->next = head ;
         head = newNode;
@@ -47,16 +47,18 @@ while(head != NULL){
     cout << head->data <<" ";
     head = head->next;
     }
+    cout << endl;
 }
 
 
 int main(){
 int i, data;
-
+ cout << "Enter the list element with separated space along with -1 for termination" << endl;
   LLNode *head =  takeinput();
     printll(head);
-    cout << "Enter the Pos along with data with separated space";
+    cout << "Enter the Pos along with data with separated space: ";
     cin >> i >> data;
     head = insertNode(head, i, data);
+    cout << "After Insertion" << endl;
     printll(head);
 }

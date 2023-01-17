@@ -65,18 +65,22 @@ void printll(LLNode *head)
 {
     while (head != NULL)
     {
-        cout << head->data << endl;
+        cout << head->data << " ";
         head = head->next;
     }
+    cout << endl;
 }
 
 int main()
 {
+
     int i;
+    cout << "Enter the list element with separated space along with -1 for termination" << endl;
     LLNode *head = takeinput();
     printll(head);
-    cout << "Enter the Pos  for deletion" << endl;
+    cout << "Enter the Pos for deletion" << endl;
     cin >> i;
     head = deleteNode(head, i);
+    cout << "After Deletion" << endl;
     printll(head);
 }
