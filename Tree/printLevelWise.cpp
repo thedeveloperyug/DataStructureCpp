@@ -51,42 +51,8 @@ void printTree(TreeNode<int>* root){
   }
    }
 
-/*
-void printTree(TreeNode<int>* root){
-    if (root == NULL)
-    {
-        return;
-    }
-    
-    // cout << root->data << ": "; //printing root data 
-    queue<TreeNode<int>*> childQueue;
-    childQueue.push(root);
-    int n = childQueue.size();
-    int i=0;
-        while(i<n){
-        TreeNode<int>* front = childQueue.front();
-        cout  << front->data << " : ";
-        i++;
-          int childData;
-          if(n-)
-            TreeNode<int>* childNode  = new TreeNode<int>(childData);
-            front->child.push_back(childNode);
-            pendingNodes.push(childNode);
-        childQueue.pop();
-        // for (int i = 0; i <childQueue.size(); i++)
-        // {
-        // 
-        // }
-        
-    } 
-}
- */
 int main(){
-    // TreeNode<int>* root = new TreeNode<int>(1);  //creating root node manually
-    // TreeNode<int>* node1 = new TreeNode<int>(2);// creating nodes
-    // TreeNode<int>* node2 = new TreeNode<int>(3);
-    // root->child.push_back(node1);
-    // root->child.push_back(node2);
+  
     TreeNode<int>* root = takeInputLevelWise(); // Taking input dynamically
     printTree(root);
     return 0;
