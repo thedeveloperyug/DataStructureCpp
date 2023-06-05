@@ -1,2 +1,6 @@
 *.exe
 **.exe
+.vscode
+.vscode/
+vscode
+.exe
