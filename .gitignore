@@ -9,7 +9,7 @@ tempCodeRunnerFile.cpp
 .deb
 main.cpp
 
-# Ignore all
+# Ignore all files and dir's
 *
 # Unignore all with extensions
 !.
