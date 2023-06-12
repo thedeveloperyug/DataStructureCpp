@@ -4,3 +4,18 @@
 .vscode/
 vscode
 .exe
+OOPS/tempCodeRunnerFile.cpp
+tempCodeRunnerFile.cpp
+.deb
+main.cpp
+
+# Ignore all
+*
+# Unignore all with extensions
+!.
+# Unignore all dirs
+!*/
+# ignore all .idea folder
+*.idea
+# ignore all .vscode folder
+*.vscode
